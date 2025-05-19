@@ -135,6 +135,7 @@ nav ul li a {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .about-card {
@@ -157,4 +158,132 @@ nav ul li a {
 .about-card h2{
   font-size: 2rem;
   font-weight: bolder;
+}
+
+.about-body{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
+}
+
+.about-body ion-icon{
+  color: royalblue;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.about-body-content{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+   padding-top: 80px;
+   color: gray;
+   justify-content: center;
+}
+
+.service h2{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.service-cards{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.service-card{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 25px;
+  border: solid 1px gray;
+  height: 350px;
+  width: 300px;
+  align-items: center;
+  background-color: white;
+}
+
+.service-cards img{
+  width: 100px;
+  height: 100px;
+}
+
+.vectors{
+  display: fle;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vectors-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  padding: 80px;
+
+}
+
+.partners-card img{
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+}
+
+.newsletter{
+  box-sizing: border-box;
+  background-color: rgb(164, 45, 149);
+  padding: 50px;
+  height: 40px;
+  width: 80%;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+  margin-left: 100px;
+   margin-bottom: 100px;
+}
+.newsletter h2{
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.newsletter-form{
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
