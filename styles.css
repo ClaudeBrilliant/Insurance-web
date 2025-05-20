@@ -286,14 +286,13 @@ nav ul li a {
   }
 }
 
-.pricing{
+.pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
-.pricing-cards{
+.pricing-cards {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -310,10 +309,10 @@ nav ul li a {
   padding: 30px;
   width: 350px;
   height: 800px;
-  border: 1px solid #007BFF;
+  border: 1px solid #007bff;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   gap: 20px;
 }
 
@@ -336,7 +335,7 @@ nav ul li a {
 
 button {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -348,32 +347,26 @@ button:hover {
 }
 
 .footer {
-  background-color: #0a0a23;
+  background-color: white;
   color: #ffffff;
-  padding: 60px 40px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* ----- Upper Footer ----- */
 .upper-footer {
+ background-color: rgb(0, 0, 48);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 200px;
+  align-items: start;
+  height: 750px;
 }
 
-.left-footer {
-  flex: 1 1 60%;
-}
 
 .left-footer h2 {
-  font-size: 28px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 
@@ -382,164 +375,139 @@ button:hover {
   line-height: 1.6;
 }
 
-.right-footer {
-  flex: 1 1 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .right-footer img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   object-fit: cover;
 }
 
-/* ----- Lower Footer ----- */
-.lower-footer {
+.mid-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: -300px;
+}
+
+.left-form img {
+  width: 350px;
+  height: 600px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Right form container */
+.form-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  padding: 50px 60px;
+  background-color: white;
+  color: black;
+  height: 100%;
+  justify-content: center;
 }
 
-/* --- Form Section --- */
-.form {
-  background-color: #1a1a40;
-  padding: 30px;
-  border-radius: 8px;
+.form-container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
-.form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
+/* Form contents */
 .form-content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .form-content input,
 .form-content select {
   padding: 12px;
   border-radius: 5px;
-  border: none;
-  font-size: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 .form-content button {
-  margin-top: 15px;
   padding: 12px;
-  background-color: #ff5722;
+  background-color: rgb(38, 104, 209);
   border: none;
   color: white;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .form-content button:hover {
   background-color: #e64a19;
 }
 
-/* --- Mid Footer Section --- */
-.mid-footer {
-  display: flex;
-  justify-content: space-between;
+.lower-mid-footer{
+  color: black;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #1a1a40;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-.left-mid-footer h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.left-mid-footer p {
-  font-size: 16px;
-  color: #ccc;
-}
-
-.mid-footer button {
-  padding: 12px 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.mid-footer button:hover {
-  background-color: #0056b3;
-}
-
-/* --- Links Section --- */
-.links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 250px;
+  margin-bottom: 80px;
+}
+
+.left-mid-footer{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  color: gray;
+  display: flex;          /* Use flexbox to align items in a row */
+  justify-content: space-between; /* Distribute space between the items */
+  gap: 20px;              /* Add space between the link items */
+  flex-wrap: wrap;        /* Allow items to wrap onto new lines if necessary */
+  margin-top: 20px;       /* Optional, adjust as needed */
 }
 
 .link {
-  flex: 1 1 160px;
+  flex: 1;                /* Make each link take equal space */
+  min-width: 200px;       /* Ensure each link block has a minimum width */
+  max-width: 300px;       /* Optional, limit the max width */
 }
 
 .link h2 {
-  margin-bottom: 15px;
   font-size: 18px;
+  margin-bottom: 10px;
+  color: gray;           /* Set text color */
 }
 
 .link ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;  /* Remove bullet points */
+  padding: 0;             /* Remove default padding */
 }
 
 .link ul li {
-  margin-bottom: 10px;
+  margin: 8px 0;          /* Add margin between list items */
 }
 
-.link ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 15px;
+.link a {
+  color:gray;         /* Set link color */
+  text-decoration: none;  /* Remove underline */
+  font-size: 14px;        /* Adjust font size */
 }
 
-.link ul li a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-/* --- Rights Section --- */
-.rights {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.rights p {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-.media-icons a img {
-  width: 24px;
-  height: 24px;
-  margin: 0 8px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s ease;
-}
-
-.media-icons a img:hover {
-  transform: scale(1.1);
+.link a:hover {
+  text-decoration: underline; /* Underline the link on hover */
 }
